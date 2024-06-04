@@ -82,7 +82,7 @@ const Jscourse = () => {
       const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];     // array map function
       const doublenums = numbers.map(n=>n*2);
       console.log(doublenums);
-      const evennums = numbers.filter(num=>num%2==0).map(n=>n*2);      // arrat filter function
+      const evennums = numbers.filter(num=>num%2===0).map(n=>n*2);      // arrat filter function
       console.log(evennums);
 
       const sumnums = numbers.reduce((acc, a)=>acc+a, 0);  // reduce function takes two parameters: a function and a starting value.

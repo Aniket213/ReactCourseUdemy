@@ -1,13 +1,13 @@
 import './App.css';
-// import Adviceapi from './components/Adviceapi';
-import Jscourse from './components/Jscourse';
+// import Adviceapi from './section4/Adviceapi';
+// import Jscourse from './section4/Jscourse';
 
 function App() {
   return (
     <div className="app">
       Hello
       {/* <Adviceapi/> */}
-      <Jscourse/>
+      {/* <Jscourse/> */}
     </div>
   );
 }

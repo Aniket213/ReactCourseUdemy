@@ -28,11 +28,11 @@ const Adviceapi = () => {
 }
 export default Adviceapi
 
-// const Message = (props)=>{
-//     return(
-//         <p>You have read {props.count} pieces of advice.</p>
-//     )
-// }
+const Message = (props)=>{
+    return(
+        <p>You have read {props.count} pieces of advice.</p>
+    )
+}
 
 
 
