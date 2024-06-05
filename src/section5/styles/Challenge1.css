@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+
+.challenge1{
+    font-family: 'Roboto Mono', sans-serif;
+    border: 3px solid #333;
+    width: 350px;
+    margin: 100px auto 0;
+}
+
+.imgbox{
+    /* border: 2px solid red; */
+    height: 210px;
+    background-image: url('../styles/profileimg.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+.imgbox:hover{
+    transform: scale(1.2);
+}
+
+.imgboxoverlay{
+    overflow: hidden;
+}
+
+.body{
+    /* border: 2px solid yellow; */
+    padding: 20px;
+}
+.body h1{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.body p{
+    font-size: 12px; font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.skills{
+    /* border: 2px solid green; */
+    /* padding: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: fit-content;
+    font-size: 12px; font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 7px;
+    margin: 0 7px 7px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
