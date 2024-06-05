@@ -1,3 +1,42 @@
 .sec6challenge{
-    background-color: lightblue;
+    background-color: rgb(230, 249, 255);
+    border-radius: 10px;
+    padding: 50px;
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec6cbox{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+.sec6cbtn{
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(230, 88, 88);
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stepbox{
+    background-color: lightyellow;
+}
+
+.countbox{
+    background-color: lightyellow;
+}
+
+.msgbox{
+    background-color: lightgreen;
 }
