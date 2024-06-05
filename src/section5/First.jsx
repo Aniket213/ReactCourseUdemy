@@ -3,6 +3,7 @@ import { pizzaData } from '../temp/data'
 import '../temp/index.css'
 
 export const First = () => {
+  // const pizzaData  = [];
   return (
     <div className='container'>
       <Header/>
@@ -20,37 +21,49 @@ const Header = ()=>{
   )
 }
 
-const Main = (props)=>{
+const Main = ({data})=>{
   return(
     <main className='menu'>
       <h2>Our Menu</h2>
-      {
-        props.data.map(a=>{
-          return(
-            <Pizza data={a}/>
+      <ul className='pizzas'>
+      {data.length>0 ? 
+        (data.map(a=>{
+          return( 
+            <Pizza data={a} key={a.name}/>
           )
-        })
+        })) :
+        <p>We are still working on our Menu. Please come back later :)</p>
       }
+      </ul>
     </main>
   )
 }
 
 const Footer = ()=>{
+  const currenthour = new Date().getHours();
+  const open = 9; const close = 22;
+  const isOpen = currenthour>=open && currenthour<=close;
   return(
     <footer className='footer'>
-      { new Date().toLocaleTimeString() } We are currently open ...
+      { isOpen ?
+        (<div className='order'>
+          <p>We're open until {close}:00. Come visit us or order online</p>
+          <button className='btn'>Order</button>
+        </div>) :
+        <p>We are happy to Welcome you between {open}:00 and {close}:00.</p>
+      }
     </footer>
   )
 }
 
-const Pizza = (props)=>{
+const Pizza = ({data})=>{
     return(
-      <div className='pizza'>
-        <img src={props.data.photoName} alt={props.data.name} />
+      <div className={`pizza ${data.soldOut ? 'sold-out' : ''}`}>
+        <img src={data.photoName} alt={data.name} />
         <div>
-          <h3>{props.data.name}</h3>
-          <p>{props.data.ingredients}</p>
-          <span>{props.data.price}</span>
+          <h3>{data.name}</h3>
+          <p>{data.ingredients}</p>
+          <span>{data.soldOut ? "Sold Out" : data.price}</span>
         </div>  
       </div>
     )

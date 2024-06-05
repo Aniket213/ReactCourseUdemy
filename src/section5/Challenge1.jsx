@@ -42,7 +42,7 @@ const Challenge1 = () => {
             {
                 data.map(a=>{
                     return(
-                        <Skill data={a} key={a.name} />
+                        <Skill name={a.name} color={a.color} key={a.name} />
                     )
                 })
             }
@@ -54,10 +54,10 @@ const Challenge1 = () => {
 }
 export default Challenge1
 
-const Skill = ({data})=>{
+const Skill = ({name, color})=>{
     return(
-        <div className="skill" style={{backgroundColor:data.color}}>
-            {data.name}
+        <div className="skill" style={{backgroundColor: color}}>
+            {name}
         </div>
     )
 }

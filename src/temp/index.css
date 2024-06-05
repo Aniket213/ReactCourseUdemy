@@ -76,13 +76,13 @@ body {
 .menu {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   gap: 4rem;
 }
 
 .menu h2 {
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
   padding: 1rem 0;
   border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
@@ -90,22 +90,22 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
-  width: 70%; margin: auto;
+  /* width: 70%; margin: auto; */
 }
 
-/* .menu > p {
+.menu > p {
   font-size: 1.5rem;
   text-align: center;
   line-height: 1.6;
   width: 80%;
-} */
-/* 
+}
+
 .pizzas {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
-} */
+}
 
 .pizza {
   display: flex;

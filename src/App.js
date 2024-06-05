@@ -2,7 +2,9 @@ import './App.css';
 // import Adviceapi from './section4/Adviceapi';
 // import Jscourse from './section4/Jscourse';
 // import { First } from './section5/First';
-import Challenge1 from './section5/Challenge1';
+// import Challenge1 from './section5/Challenge1';
+// import Stepcomponent from './section6/Stepcomponent';
+import Challenge1 from './section6/Challenge1';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       {/* <Adviceapi/> */}
       {/* <Jscourse/> */}
       {/* <First/> */}
+      {/* <Challenge1/> */}
+      {/* <Stepcomponent/> */}
       <Challenge1/>
     </div>
   );
