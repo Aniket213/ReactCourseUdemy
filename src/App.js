@@ -4,7 +4,11 @@ import './App.css';
 // import { First } from './section5/First';
 // import Challenge1 from './section5/Challenge1';
 // import Stepcomponent from './section6/Stepcomponent';
-import Challenge1 from './section6/Challenge1';
+// import Challenge1 from './section6/Challenge1';
+// import Muicrashcourse from './muicrashcourse/Muicrashcourse';
+// import FileUpload from './muicrashcourse/FileUpload';
+// import FarAwayProject from './section6/FarAwayProject';
+import Exercise from './section6/Exercise';
 
 function App() {
   return (
@@ -14,7 +18,11 @@ function App() {
       {/* <First/> */}
       {/* <Challenge1/> */}
       {/* <Stepcomponent/> */}
-      <Challenge1/>
+      {/* <Challenge1/> */}
+      {/* <Muicrashcourse/> */}
+      {/* <FileUpload/> */}
+      {/* <FarAwayProject/> */}
+      <Exercise/>
     </div>
   );
 }
