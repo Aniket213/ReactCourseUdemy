@@ -8,7 +8,8 @@ import './App.css';
 // import Muicrashcourse from './muicrashcourse/Muicrashcourse';
 // import FileUpload from './muicrashcourse/FileUpload';
 // import FarAwayProject from './section6/FarAwayProject';
-import Exercise from './section6/Exercise';
+// import Exercise from './section6/Exercise';
+import Challenge2 from './section6/Challenge2';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <Muicrashcourse/> */}
       {/* <FileUpload/> */}
       {/* <FarAwayProject/> */}
-      <Exercise/>
+      {/* <Exercise/> */}
+      <Challenge2/>
     </div>
   );
 }

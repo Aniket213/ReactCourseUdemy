@@ -92,10 +92,8 @@ const Exercise = () => {
     const handleclick = (id)=>{
         if(id === selected){
             setselected(null);
-            styles.child.backgroundColor='#FF8F00';
         }else{
             setselected(id);
-            styles.child.backgroundColor='red';
         }
     }
 
@@ -107,7 +105,7 @@ const Exercise = () => {
             return(
                 <div key={a.id} onClick={()=>{handleclick(a.id)}} style={{
                     ...styles.child,
-                    ...(a.id === selected && styles.selectedChild)
+                    ...(a.id === selected && styles.selectedchild)            // this is important part
                 }}>
                     { a.id===selected ? a.answer : a.question}
                 </div>
