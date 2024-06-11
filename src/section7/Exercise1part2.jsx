@@ -1,19 +1,16 @@
 import React, { useState } from 'react'
 
-const Exercise1 = () => {
-    const [data, setdata] = useState([        // creating it usestate variable is important because without it the re-render will not occur
+const Exercise1part2 = () => {
+    const [data, setdata] = useState([
         {
             title: "1. Lorem ipsum dolor sit amet",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem corporis nulla itaque. Inventore, impedit!",
-            isactive: false
         },{
             title: "2. Lorem ipsum dolor sit amet",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem corporis nulla itaque. Inventore, impedit!",
-            isactive: false
         },{
             title: "3. Lorem ipsum dolor sit amet",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem corporis nulla itaque. Inventore, impedit!",
-            isactive: false
         },
     ]);
 
@@ -26,31 +23,24 @@ const Exercise1 = () => {
             backgroundColor: 'lightblue',
         }
     };
-
-    // const toggleactive = (index) =>{
-    //     // const newdata = data.map((a, i)=>{
-    //     //     if(i === index){
-    //     //         return({...a, isactive:!a.isactive});
-    //     //     };
-    //     //     return a;
-    //     // })
-    //     // setdata(newdata);
-    //     const newdata = [...data];  // always use spread operator, do not directly assign the value like: const newdata=data;
-    //     newdata[index].isactive = !newdata[index].isactive;
-    //     setdata(newdata);
-    // };
+    
+    const [isactive, setisactive] = useState(null);
+    const toggleactive = (index) =>{
+        isactive === index ? setisactive(null) : setisactive(index);
+    };
 
   return (
-    <div>
+    <div> <br /><br />
+        <h1>Second Accordian</h1> <p>(Ony one accordian open at a time)</p>
       {
         data.map((a, index)=>{
             return(
                 <div key={a.title}>  <br />
-                    <div style={styles.title} onClick={()=>{setdata(prev=>prev.map((a, i)=>i===index?{...a, isactive: !a.isactive}:a))}}>
+                    <div style={styles.title} onClick={()=>{toggleactive(index)}}>
                         {a.title}
                     </div>
-                    {
-                        a.isactive && (
+                    { (isactive === index) &&
+                        (
                         <div style={styles.desc}>
                             {a.desc}
                         </div>
@@ -64,4 +54,4 @@ const Exercise1 = () => {
   )
 }
 
-export default Exercise1
+export default Exercise1part2

@@ -10,7 +10,9 @@ import './App.css';
 // import FarAwayProject from './section6/FarAwayProject';
 // import Exercise from './section6/Exercise';
 // import Challenge2 from './section6/Challenge2';
-import Exercise1 from './section7/Exercise1';
+// import Exercise1 from './section7/Exercise1';
+// import Exercise1part2 from './section7/Exercise1part2';
+import Challenge from './section7/Challenge';
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
       {/* <FarAwayProject/> */}
       {/* <Exercise/> */}
       {/* <Challenge2/> */}
-      <Exercise1/>
+      {/* <Exercise1/> */}
+      {/* <Exercise1part2/> */}
+      <Challenge/>
     </div>
   );
 }
