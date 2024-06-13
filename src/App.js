@@ -1,3 +1,4 @@
+// import { useState } from 'react';
 import './App.css';
 // import Adviceapi from './section4/Adviceapi';
 // import Jscourse from './section4/Jscourse';
@@ -14,9 +15,11 @@ import './App.css';
 // import Exercise1part2 from './section7/Exercise1part2';
 // import Challenge from './section7/Challenge';
 // import Eatandsplit from './section8/Eatandsplit';
-import Starcomponent from './section10/Starcomponent';
+// import Starcomponent from './section10/Starcomponent';
+// import Challenge from './section10/Challenge';
 
 function App() {
+  // const [movierating, setmovierating] = useState('');
   return (
     <div className="app">
       {/* <Adviceapi/> */}
@@ -34,7 +37,20 @@ function App() {
       {/* <Exercise1part2/> */}
       {/* <Challenge/> */}
       {/* <Eatandsplit/> */}
-      <Starcomponent maxrating={10} color='red'/>
+
+      {/* <Starcomponent maxrating={5} messages={['very bad', 'bad', 'neutral', 'good', 'very good']} setmovierating={setmovierating}/>
+      <p>The movie rating is {movierating}</p> */}
+
+      {/* <Challenge shorttextlenght={200} buttonshowmore='show more' buttonshowless='show less' color='black'>
+        challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
+      </Challenge>
+      <Challenge shorttextlenght={100} buttonshowmore='More Text' buttonshowless='Less Text' color='gold' boxstyle={{backgroundColor: 'lightblue', padding: '15px', margin: '50px'}}>
+        challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
+        challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
+        challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
+        challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
+      </Challenge> */}
+
     </div>
   );
 }

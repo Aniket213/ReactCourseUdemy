@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 // This one is mind eater ...
-const Starcomponent = ({ maxrating = 5, color='#fcc419', size=48, messages=[] }) => {
-  const [rating, setrating] = useState(null);
+const Starcomponent = ({ maxrating = 5, color='#fcc419', size=48, messages=[], defaultrating=0, setmovierating }) => {
+  const [rating, setrating] = useState(defaultrating);
   const [hovered, sethovered] = useState(null);
 
   const handleclick = (i) => {
     setrating(i);
+    setmovierating(messages ? messages[i-1]: i);
   };
 
   return (
