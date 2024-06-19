@@ -17,6 +17,7 @@ import './App.css';
 // import Eatandsplit from './section8/Eatandsplit';
 // import Starcomponent from './section10/Starcomponent';
 // import Challenge from './section10/Challenge';
+import Video142 from './section12/Video142';
 
 function App() {
   // const [movierating, setmovierating] = useState('');
@@ -50,6 +51,10 @@ function App() {
         challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
         challenge section 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt enim commodi, officiis, quae rerum excepturi totam quia alias animi autem odio, deleniti praesentium perspiciatis sit pariatur voluptate reiciendis non exercitationem id inventore perferendis repellat. Veritatis error reprehenderit ducimus sint, voluptatibus commodi alias obcaecati unde, fuga accusamus quam ipsum hic?
       </Challenge> */}
+
+        {/* ======== section 12 ============== */}
+      <Video142/>
+
 
     </div>
   );
