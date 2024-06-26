@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from 'react'
-const mykey = "f84fc31d";
+
 const Video142 = () => {
-    const [movies, setmovies] = useState([]);
+    const [movies, setmovies] = useState();
     const [loading, setloading] = useState(false);
 
-    useEffect(()=>{
-        const fetchdata = async ()=>{
-            setloading(true);
-            const res = await fetch(`http://www.omdbapi.com/?apikey=${mykey}&s=interstellar`);
+    useEffect(()=>{   // fetching data in useeffect hook
+        const fetchdata = async ()=>{  // create a separate function inside callback function in useeffect hook
+          try{      // perform error handling 
+            setloading(true); // adding loading state 
+            const res = await fetch(`https://api.adviceslip.com/advice`);
             const data = await res.json();
-            setmovies(data.Search);
-            console.log(data.Search);
+            setmovies(data.slip.advice);
+            console.log(data.slip.advice);
+          }
+          catch(err){
+            console.log(err);
+          }  
+          finally{
             setloading(false);
+          }
         }
-        fetchdata();
+        fetchdata();   // call the function inside the useeffect 
     }, []);
 
   return (
@@ -21,13 +28,9 @@ const Video142 = () => {
       {
         !loading ? 
         (
-            movies && movies.map((a, i)=>{
-                return(
-                    <div key={i}>
-                        <p>{a.Title}</p>
+                    <div>
+                        <p>{movies}</p>
                     </div>
-                )
-            })
         )
         :
         (

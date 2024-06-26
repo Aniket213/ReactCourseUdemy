@@ -17,7 +17,9 @@ import './App.css';
 // import Eatandsplit from './section8/Eatandsplit';
 // import Starcomponent from './section10/Starcomponent';
 // import Challenge from './section10/Challenge';
-import Video142 from './section12/Video142';
+// import Video142 from './section12/Video142';
+// import Keyboard from './section12/Keyboard';
+import Video158 from './section12/Video158';
 
 function App() {
   // const [movierating, setmovierating] = useState('');
@@ -53,9 +55,9 @@ function App() {
       </Challenge> */}
 
         {/* ======== section 12 ============== */}
-      <Video142/>
-
-
+      {/* <Video142/>
+      <Keyboard/> */}
+      <Video158/>
     </div>
   );
 }
