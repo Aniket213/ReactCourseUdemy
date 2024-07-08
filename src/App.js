@@ -19,7 +19,10 @@ import './App.css';
 // import Challenge from './section10/Challenge';
 // import Video142 from './section12/Video142';
 // import Keyboard from './section12/Keyboard';
-import Video158 from './section12/Video158';
+// import Video158 from './section12/Video158';
+// import Customhook from './section16/Customhook';
+// import UseReducerhook from './section16/UseReducerhook';
+import QuizApp from './section16/Quiz/QuizApp';
 
 function App() {
   // const [movierating, setmovierating] = useState('');
@@ -57,7 +60,10 @@ function App() {
         {/* ======== section 12 ============== */}
       {/* <Video142/>
       <Keyboard/> */}
-      <Video158/>
+      {/* <Video158/> */}
+      {/* <Customhook/> */}
+      {/* <UseReducerhook/> */}
+      <QuizApp/>
     </div>
   );
 }
